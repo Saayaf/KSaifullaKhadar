@@ -118,8 +118,22 @@
         <p>&copy; 2024 Fashion K Saifulla Khadar. All rights reserved.</p>
     </footer>
 
-    <!-- EmailJS Library -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!-- EmailJS Library with integrity and crossorigin -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js" 
+            integrity="sha384-your-integrity-hash" 
+            crossorigin="anonymous"></script>
+    
+    <!-- Ensure EmailJS is loaded before your script -->
+    <script>
+        window.addEventListener('load', function() {
+            console.log('Page fully loaded. Checking EmailJS availability...');
+            if (typeof emailjs !== 'undefined') {
+                console.log('EmailJS library loaded successfully');
+            } else {
+                console.error('EmailJS library failed to load');
+            }
+        });
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
