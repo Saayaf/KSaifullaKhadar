@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion K Saifulla Khadar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div id="caption"></div>
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+    </div>
+
+    <header>
+        <nav>
+            <div class="logo">K Saifulla Khadar</div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Fashion K Saifulla Khadar</h1>
+                <p>Capturing elegance, style, and personality</p>
+                <a href="#gallery" class="cta-button">View My Work</a>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery">
+            <h2>My Portfolio</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-caption="Runway Elegance">
+                    <img src="model1.jpg" alt="Fashion Model 1">
+                </div>
+                <div class="gallery-item" data-caption="Urban Chic">
+                    <img src="model2.jpg" alt="Fashion Model 2">
+                </div>
+                <div class="gallery-item" data-caption="Studio Shoot">
+                    <img src="model3.jpg" alt="Fashion Model 3">
+                </div>
+                <div class="gallery-item" data-caption="Street Style">
+                    <img src="model4.jpg" alt="Fashion Model 4">
+                </div>
+                <div class="gallery-item" data-caption="High Fashion">
+                    <img src="model5.jpg" alt="Fashion Model 5">
+                </div>
+                <div class="gallery-item" data-caption="Editorial Look">
+                    <img src="model6.jpg" alt="Fashion Model 6">
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+                <div class="about-text">
+                    <p>Hello! I'm a professional fashion model passionate about bringing creativity and style to every photoshoot. With experience in runway, editorial, and commercial modeling, I strive to tell stories through visual art.</p>
+                    <div class="skills">
+                        <h3>My Specialties</h3>
+                        <ul>
+                            <li>Runway Modeling</li>
+                            <li>Editorial Shoots</li>
+                            <li>Commercial Campaigns</li>
+                            <li>Fashion Photography</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <div class="contact-info">
+                <div class="contact-details">
+                    <h3>Get in Touch</h3>
+                    <p><i class="fas fa-envelope"></i> Email: saifullakhadar.k@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> Mobile: +91 9538935727</p>
+                    <div class="social-links professional">
+                        <a href="https://www.instagram.com/saifulla_khadar" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/saifulla-khadar" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.twitter.com/saifulla_khadar" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                        <input type="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <textarea id="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p>&copy; 2024 Fashion K Saifulla Khadar. All rights reserved.</p>
+    </footer>
+
+    <!-- EmailJS Library -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
